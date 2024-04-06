@@ -12,26 +12,51 @@ Os participantes inscritos podem emitir uma credencial para check-in no dia do e
 
 O sistema fará um scan da credencial do participante para permitir a entrada no evento.
 
-## Requisitos
+## Funcionalidades
+1. **Inscrição de Evento**:
+    - O organizador pode cadastrar um evento.
 
-### Requisitos funcionais
+2. **Cadastro de Participantes**:
+    - O organizador pode cadastrar novos participantes.
+    - Os participantes só podem se inscrever uma vez em um evento.
 
-- O organizador deve poder cadastrar um novo evento;
-- O organizador deve poder visualizar dados de um evento;
-- O organizador deve poser visualizar a lista de participantes;
-- O participante deve poder se inscrever em um evento;
-- O participante deve poder visualizar seu crachá de inscrição;
-- O participante deve poder realizar check-in no evento;
+3. **Visualização de Dados do Evento**:
+    - O organizador pode ver detalhes do evento, como data, local, palestrantes etc.
 
-### Regras de negócio
+4. **Lista de Participantes**:
+    - O organizador tem acesso à lista completa de participantes inscritos.
 
-- O participante só pode se inscrever em um evento uma única vez;
-- O participante só pode se inscrever em eventos com vagas disponíveis;
-- O participante só pode realizar check-in em um evento uma única vez;
+5. **Crachá de Inscrição**:
+    - Os participantes inscritos podem emitir um crachá de inscrição.
 
-## 🚀 Tecnologias
+6. **Check-in no Dia do Evento**:
+    - O sistema permite o check-in dos participantes no dia do evento.
+    - O check-in pode ser realizado através de um QRCode.
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
+## Regras de Negócio
 
-- [Java](https://docs.oracle.com/en/java/)
-- [SpringBoot](https://spring.io/projects/spring-boot)
+- Os participantes só podem se inscrever uma vez em um evento.
+- A inscrição só é permitida em eventos com vagas disponíveis.
+- O check-in só pode ser feito uma única vez por participante.
+
+## Tecnologias Utilizadas
+- **Backend**: Java com **Spring Boot**
+- **Banco de Dados**: **HSQLDB** (local)
+
+## Como Executar o Projeto
+
+1. Clone este repositório.
+2. Instale as dependências necessárias.
+3. Execute o servidor backend.
+4. Execute o servidor frontend.
+5. Acesse a aplicação no navegador.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Créditos
+
+Este projeto foi desenvolvido com base no tutorial oferecido pela Rocketseat durante o evento NJW Unite. Agradecemos à equipe da Rocketseat por fornecer recursos valiosos e conhecimento técnico.
+
+Instrutora responsável pelo tutorial: Fernanda Kipper
